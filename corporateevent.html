@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title>Wellcome to Catering Corner</title></head>
+<link href="G:\Moti caters\corporateevent.css" rel="stylesheet" type="text/css">
+<script src="corporateevent.js"></script>
+<body >
+<div id="big">
+
+	<header id="top">
+		<h1>CATERING CORNER</h1>
+		<h3>Contact No.#91+1234567891</h3>
+	</header>
+	
+<ul>
+	  <li><a  href="LEO_g CATERS.HTML">HOME</a></li>
+	  <li><a  href="gallary.html">GALLARY</a></li>
+	  <li><a href="menus.html">MENUS</a></li>
+	  <li><a  class="active" href="#">BOOKING</a>
+	  <ul class="dropdown">
+                <li><a href="wedding.html">WEDDING EVENT</a></li>
+                <li><a href="corporateevent.html">CORPORATE EVENT</a></li>
+        
+            </ul>
+	</li>
+	  <li><a  href="about.html">ABOUT</a></li>
+	</ul>
+	<b>You are select Corporet Event.</b>
+
+	<div class="multiselect">
+        <fieldset>
+            <legend>Select Pots</legend>
+				<form name="small_item">
+				
+		<label><input type="checkbox" name="option[]" value="1" />Green</label>
+		<label><input type="checkbox" name="option[]" value="2" />Red</label>
+		<label><input type="checkbox" name="option[]" value="3" />Blue</label>
+		<label><input type="checkbox" name="option[]" value="4" />Orange</label>
+		<label><input type="checkbox" name="option[]" value="5" />Purple</label>
+		<label><input type="checkbox" name="option[]" value="6" />Black</label>
+		<label><input type="checkbox" name="option[]" value="7" />White</label>
+	</div>
+				</select><br><br>
+                <br><center>
+				<button type="button" onclick="calculateprice()" >Calculate</button>
+				The new calculated Price:<input type="text" id ="PicExtPrice" size=8>
+				</center>
+				</form>
+				
+        </fieldset>
+ 
+	
+	<div id="wrap">
+	<div class="menu">
+        <fieldset>
+            <legend>Select Menu</legend>
+				<form name="menu_item">
+				<select name="sweet" onchange="calculatemenu()" id="sweets">
+				<option value="0">Select One Choice from List for Sweets</option>
+				<option value="60">Barfi</option>
+				<option value="80">Rasmlayee</option>
+				<option value="100">Moong Thal</option>
+				<option value="120">Keser Kaju Barfi</option>
+				<option value="180">Kaju Katli</option>
+				<option value="200">Bengali Rasgulla</option>
+				<option value="280">Apple Halwa</option>
+				<option value="190">Anarkali Roll</option>
+				<option value="250">Cadburry Roll</option>
+				</select><br><br>
+				<select name="icecream"onchange="calculatemenu()" id="icecream">
+				<option value="0">Select one Choice from List for Ice-cream</option>
+				<option value="60">Vanila Ice-cream</option>
+				<option value="40">Strawbery Ice-cream</option>
+				<option value="80">Chocolate Vanila Strawbery</option>
+				<option value="60">Sandwich Ice-cream</option>
+				<option value="80">Faluda</option>
+				<option value="80">Pot-kulfi</option>
+				<option value="60">Real Orange</option>
+				</select><br><br>
+				<select name="vegitable"onchange="calculatemenu()" id="vegitables">
+				<option value="0">Select one Choice from List for Vegetable</option>
+				<option value="60">Dhal Frayi</option>
+				<option value="40">Dhal simple</option>
+				<option value="80">Pancharatna Dhal</option>
+				<option value="60">Rajma</option>
+				<option value="80">Stuffed Bhindi</option>
+				</select><br><br>
+				<select name="roti" onchange="calculatemenu()" id="roties">
+				<option value="0">Select One Choice from List for Bread</option>
+				<option value="60" >Tava Roti</option>
+				<option value="80"> Tandoor Roti</option>
+				<option value="100">Naan Roti</option>
+				</select><br><br>
+                <br><center>
+				<button type="button" onclick="calculatemenu()" >Calculate</button>
+				The new calculated Price:<input type="text" id ="price" size=8>
+				</center>
+				Quantity<input type="text"  name="quantity" id="quantity" /><br>
+				<br>
+				<button type="button" onclick="calculategrand()" >GrandCalculate</button>
+				The new calculated Price:<input type="text" id ="gprice" size=8>
+				
+				
+				</form>
+				
+        </fieldset>
+    </div>
+	</div>
+	
+	<div id="wrap">
+	<div class="cont_details">
+        <fieldset>
+            <legend>Contact Details</legend>
+	<form>
+                <label for="name"> Full Name</label>
+                <input type="text" id="name" name="name" required/>
+                <br>
+				<label for="Email">E-mail</label>
+				<input Type="text" id="email" name="user_email" required/>
+				<br>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address"required/>
+                <br>
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" id="phonenumber" name="phonenumber"required/>
+                <br>
+				<label for="venue" >Venue</label>
+				<input type="text" id="venue" name="venue" required/>
+				<br>
+				<label for="guest">Enter number of guest more then 100.</label>
+				<input type="number" min="100"  required>
+				<p id ="checker">(If the number is less than 100 an error message will be displayed.)</p>
+				<br>
+        </fieldset>
+    </div>
+				<input type="submit" id="submit" value="Submit" onclick="calculateTotal()">
+				
+	</div>
+	</form>
+</div>
+<div id="social">
+			<a href="http://www.facebook.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_facebook.png" title="Catering Corner facebook">
+			</a>
+			<a href="http://www.instagram.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_instagram.png" title="Catering Corner instagram">
+			</a>
+			<a href="http://www.twitter.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_twitter.png" title="Catering Corner twitter">
+			</a>
+			<a href="http://www.linkedin.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_linkedin.png" title="Catering Corner linkedin">
+			</a>
+			</div>
+				<br/>
+<footer id="bottom_footer">
+	Design by<img src="G:\Moti caters\images\logo.png"> Dovelopers.
+</footer>
+</div>
+</body>
+</html>

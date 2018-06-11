@@ -1,0 +1,145 @@
+body{
+	background-image:url('G:/Moti caters/images/back/abstract_red.jpg');
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+
+h1{
+	font: italic 50px Algerian;
+}
+#number{
+	text-align:right;
+	padding-bottom:-5px;
+	padding-top:-8px;
+}
+
+ul{
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+	li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+#big{
+	
+	width:1200px;
+	margin:20px auto;
+}
+#top{background: #111111;
+	 border:10px solid maroon;
+	 padding:20px;
+	color:white;
+	text-align:center;
+	font:bold 20px;
+}
+#main_section{
+	border: 2px solid maroon;
+	padding:20px;
+	float:left;
+	width:96%;
+}
+#wrap .menu fieldset{
+	margin:10px;
+	padding:20px;
+	-moz-border-radius:10px;
+	-khtml-border-radius:10px;
+	border-radius:10px;
+}
+#wrap{
+	width:900px;
+	margin:0 auto;
+	margin-top:8px;
+	padding:5px;
+	background:#fff;
+    font-family:AvenirLTStd, Arial, Helvetica, sans-serif;
+	font-size:13px;    
+    line-height:16px;
+}
+#wrap .cont_details fieldset{
+	margin:10px;
+	padding:20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+#wrap legend{
+	font-size:20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	font-weight:bold;
+	font-style:italic;
+    padding-bottom:10px;
+}
+#wrap .cont_details input{
+	margin-bottom:10px;
+	color:#000;
+}
+#wrap label{
+	font-size:16px;
+	padding-right:15px;
+	color:#000;
+    font-weight:bold;
+}
+
+#wrap input[type="text"]:hover,
+#wrap input[type="text"]:active {
+background-color: #FAF398;
+}
+
+#wrap input#submit
+{
+margin:10px;
+padding-left:20px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+#social{
+	
+	margin:10px;
+	padding-left:250px;
+}
+#bottom_footer{
+	clear:both;
+	
+	text-align:center;
+	padding:15px;
+	border-top:2px solid green;	
+}
+
+	

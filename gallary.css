@@ -1,0 +1,100 @@
+body{
+	background-image:url('G:/Moti caters/images/back/black_light_dark_figures_73356_1680x1050.jpg');
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+.zoomin img { height: 250px;
+ width: 500px; 
+ display:block;
+-webkit-transition: all 2s ease;
+ -moz-transition: all 2s ease;
+ -ms-transition: all 2s ease;
+ transition: all 1s ease; }
+ .zoomin img:hover {
+ width: 900px;
+ height: 600px;
+ }
+h1{
+	font: italic 50px Algerian;
+}
+h3{
+	text-align:right;
+	padding-bottom:-5px;
+	padding-top:-8px;
+}
+h2{
+	font: bold 30px Times New Roman;
+	color: white;
+}
+ul{
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+	li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+
+#big{
+	
+	width:1200px;
+	margin:20px auto;
+	
+	
+}
+
+#top{background: #f74b87;
+	 border:5px solid black;
+	 padding:20px;
+		color:white;
+		font:bold 20px;
+		}
+#roundtext{
+	padding-top:10px;	
+}
+
+#social{
+	
+	margin:10px;
+	padding-left:250px;
+}
+#bottom_footer{
+	clear:both;
+	text-align:center;
+	padding:15px;
+	border-top:2px solid green;	
+	color:white;
+}

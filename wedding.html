@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title>Wellcome to Catering Corner</title></head>
+<link href="G:\Moti caters\wedding.css" rel="stylesheet" type="text/css">
+<script src="wedding.js"></script>
+<body >
+<div id="big">
+
+	<header id="top">
+		<h1>CATERING CORNER</h1>
+		<h3 id="number">Contact No.#91+1234567891</h3>
+	</header>
+	
+<ul>
+	  <li><a  href="LEO_g CATERS.HTML">HOME</a></li>
+	  <li><a  href="gallary.html">GALLARY</a></li>
+	  <li><a href="menus.html">MENUS</a></li>
+	  <li><a  class="active" href="#">BOOKING</a>
+	  <ul class="dropdown">
+                <li><a href="wedding.html">WEDDING EVENT</a></li>
+                <li><a href="corporateevent.html">CORPORATE EVENT</a></li>
+        
+            </ul>
+	</li>
+	  <li><a  href="about.html">ABOUT</a></li>
+	</ul>
+	<div id="wrap">
+	<div class="menu">
+        <fieldset>
+            <legend>Select Pots</legend>
+				<form name="small_item">
+				<select name="Pleats" onchange="calculateprice()" id="pleat_item">
+				<option value="0">Select One Choice from List for Pleat</option>
+				<option value="60">Malamine Pleat</option>
+				<option value="80">Bonchina Pleat</option>
+				<option value="100">Luminar Pleat</option>
+				<option value="20">Other Pleat</option>
+				</select><br><br>
+				<select name="Bouls"onchange="calculateprice()" id="boul_item">
+				<option value="0">Select one Choice from List for Boul</option>
+				<option value="100">Round Boul</option>
+				<option value="160">Squire Boul</option>
+				<option value="220">Plastic</option>
+				<option value="60">Other Boul</option>
+				</select><br><br>
+				<select name="Pannikin" onchange="calculateprice()" id="katori">
+				<option value="0">Select One Choice from List for Bangoli Sweets</option>
+				<option value="60" >Bangoli Rasgulla</option>
+				<option value="80">Rasmalai</option>
+				<option value="75">Amriti</option>
+				<option value="80">Cham Cham</option>
+				<option value="120">Malapua</option>
+				<option value="60">Metha dahi</option>
+				<option value="140">Rabri</option>
+				<option value="180">Rajbhog</option>
+				<option value="60">Sandesh</option>
+				</select><br><br>
+				<select name="" onchange="calculateprice()" id="katori">
+				<option value="0">Select One Choice from List for Bangoli Sweets</option>
+				<option value="80" >Bangoli Rasgulla</option>
+				<option value="60" >Bangoli Rasgulla</option>
+				</select><br><br>
+				</form>
+                <br><center>
+				<button type="button" onclick="calculateprice()" >Calculate</button>
+				The new calculated Price:<input type="text" id ="PicExtPrice" size=8>
+				</center>
+				</form>
+        </fieldset>
+    </div>
+	</div>
+	
+	
+	<div id="wrap">
+	<div class="cont_details">
+        <fieldset>
+            <legend>Contact Details</legend>
+	<form>
+                <label for="name"> Full Name</label>
+                <input type="text" id="name" name="name" required/>
+                <br>
+				<label for="Email">E-mail</label>
+				<input Type="text" id="email" name="user_email" required/>
+				<br>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address"required/>
+                <br>
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" id="phonenumber" name="phonenumber"required/>
+                <br>
+				<label for="venue" >Venue</label>
+				<input type="text" id="venue" name="venue" required/>
+				<br>
+				<label for="guest">Enter number of guest more then 100.</label>
+				<input type="number" min="100"  required>
+				<p id ="checker">(If the number is less than 100 an error message will be displayed.)</p>
+				<br>
+        </fieldset>
+    </div>
+				<input type="submit" id="submit" value="Submit" onclick="calculateTotal()">
+	</div>
+	</form>
+</div>
+<div id="social">
+			<a href="http://www.facebook.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_facebook.png" title="Catering Corner facebook">
+			</a>
+			<a href="http://www.instagram.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_instagram.png" title="Catering Corner instagram">
+			</a>
+			<a href="http://www.twitter.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_twitter.png" title="Catering Corner twitter">
+			</a>
+			<a href="http://www.linkedin.com/" target="_blank">
+			<img src="G:\Moti caters\images\Social\social_linkedin.png" title="Catering Corner linkedin">
+			</a>
+			</div>
+				<br/>
+<footer id="bottom_footer">
+	Design by<img src="G:\Moti caters\images\logo.png"> Dovelopers.
+</footer>
+</div>
+</body>
+</html>
